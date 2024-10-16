@@ -21,12 +21,12 @@ return (
             <h1>List of Users</h1>
             <ul>
                 {listofuser.map((user) => (
-                    <li key={user.id}> UserName: {user.name}
+                    <li key={user.id}> <span style={{color: "lightgreen"}}>Username:</span> {user.name}
                     <hr />
                     Email: {user.email}
                     <hr />
                     </li>
-                ))};
+                ))}
             </ul>
         </div>
     )
